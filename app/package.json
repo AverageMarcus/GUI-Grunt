@@ -1,0 +1,13 @@
+{
+  "name": "guigrunt",
+  "main": "views/index.html",
+  "version": "0.0.1",
+  "single-instance": true,
+  "window": {
+    "title": "GUI-Grunt",
+    "width": 650,
+    "height": 650,
+    "toolbar": false
+  },
+  "chromium-args": "--child-clean-exit"
+}
