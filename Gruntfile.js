@@ -325,7 +325,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('dist-linux', [
-    'jshint',
+    /*'jshint',*/
     'clean:distLinux64',
     'copy:appLinux',
     'createLinuxApp:Linux64'

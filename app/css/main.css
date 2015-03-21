@@ -1,2 +1,20 @@
-body {
+html, body {
+	max-width:100%;
+}
+
+.main {
+	margin-top: 50px;
+}
+
+footer{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100px;
+}
+footer textarea{
+	height:100%;
+	overflow-y: scroll;
+	resize: none;
 }

@@ -2,16 +2,47 @@
 <html>
 <head>
     <title>GUIGrunt</title>
-    <link rel="stylesheet" href="../css/main.css" />
+    <script>
+		  var ngui = require('nw.gui');
+		  var nwin = ngui.Window.get();
+      nwin.maximize();
+    </script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="../css/main.css" >
 </head>
 <body>
-	<h1>GUI-Grunt</h1>
-	<div id="loading">Loading Gruntfile...</div>
-	<div id="tasks" style="display:none">
-		<h2> Available Tasks</h2>
-		<p id="output"></p>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Gui-Grunt</a>
+			</div>
+			<div class="pull-right">
+				<i id="progress" class="fa fa-spinner fa-pulse fa-2x" style="color:#fff;margin:10px;display:none;"></i>
+      </div>
+		</div>
+	</nav>
+
+	<div class="container-fluid main">
+		<div id="loading" class="text-center"><h1><i class="fa fa-spinner fa-pulse"></i> Loading Gruntfile</h1></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="tasks" style="display:none">
+					<h2> Available Tasks</h2>
+					<p id="output"></p>
+					<div class="row">
+						<div class="col-xs-12">
+							<br/><br/><strong>Description:</strong> <span id="desc"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
+	<footer class="row-fluid">
+		<textarea id="log" class="col-xs-12"></textarea>
+	</footer>
 	<script src="../js/index.js" ></script>
 </body>
 </html>

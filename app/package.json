@@ -5,7 +5,7 @@
   "single-instance": true,
   "window": {
     "title": "GUI-Grunt",
-    "width": 650,
+    "width": 800,
     "height": 650,
     "toolbar": false
   },
